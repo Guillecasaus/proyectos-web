@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<link href="proyectofinalcss.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="proyectofinaljs.js"></script>
+		<title>Rainbow Six Siege</title>
+	</head>	
+		
+	<body onload="inicio()"> 
+	
+		<!-- Menú de navegación -->
+		<nav class="menu">
+			<button class="tablink" onclick="openPage('Inicio')" >Inicio</button>
+			<button class="tablink" onclick="openPage('home')"  id="defaultOpen">Home</button>
+			<button class="tablink" onclick="openPage('Mapas')" >Mapas</button>
+			<button class="tablink" onclick="openPage('Agentes')">Angentes</button>
+			<button class="tablink" onclick="openPage('Multimedia')">Multimedia</button>
+		</nav>
+		
+		<div id="Inicio" class="tabcontent">
+		</div>
+		
+		<div id="home" class="tabcontent">
+		</div>
+
+		<!-- Apartado de los mapas -->
+		<div id="Mapas" class="tabcontent">
+			<div id='mapas'><p>DESCUBRE LOS MAPAS</p></div>
+			<div id='textomapas'><p>No importa si acabas de descubrir el juego o si aún estás aprendiéndote los mapas: ¡echa un vistazo a estas guías que te ayudarán a dar tus primeros pasos en Rainbow Six Siege!</p></div>
+			
+			<!-- carrusel imagenes de los distintos mapas -->			
+			<div id="gallery">
+				<img id="image" src="imagenes/carruselimg/img1.jpg">
+			</div>
+		</div>
+	
+		<!-- Apartado de los agentes -->
+		<div id="Agentes" class="tabcontent">
+			<div id="agentesa"><p>ATACANTES</p></div>
+			
+			<!-- Botones de las imagenes de los atacantes -->
+			<button class="boton" onclick="openPage('est1')"></button>
+			<button class="boton2" onclick="openPage('est2')"></button>
+			<button class="boton3" onclick="openPage('est3')"></button>
+			<button class="boton4" onclick="openPage('est4')"></button>
+			
+			<div id='agentesd'><p>DEFENSORES</p>	
+			
+			<!-- Botones de las imagenes de los defensores-->
+			<button class="boton5" onclick="openPage('est5')"></button>
+			<button class="boton6" onclick="openPage('est6')"></button>
+			<button class="boton7" onclick="openPage('est7')"></button>
+			<button class="boton8" onclick="openPage('est8')"></button>	
+			</div>
+		</div>	
+		
+		<!-- Informacion del personaje al hacer click en la imagen del primer agente -->					
+				<div id="est1" class="tabcontent">					
+					<button class="atras" onclick="openPage('Agentes')"></button>
+				</div>
+				
+		<!-- Informacion del personaje al hacer click en la imagen del segundo agente -->				
+				<div id="est2" class="tabcontent">
+					<button class="atras" onclick="openPage('Agentes')"></button>
+				</div>	
+				
+			<!-- Informacion del personaje al hacer click en la imagen del tercer agente -->				
+				<div id="est3" class="tabcontent">
+					<button class="atras" onclick="openPage('Agentes')"></button>
+				</div>	
+				
+			<!-- Informacion del personaje al hacer click en la imagen del cuarto agente -->
+				<div id="est4" class="tabcontent">
+					<button class="atras" onclick="openPage('Agentes')"></button>
+				</div>
+				
+			<!-- Informacion del personaje al hacer click en la imagen del primer defensor -->		
+				<div id="est5" class="tabcontent">
+					<button class="atras" onclick="openPage('Agentes')"></button>
+				</div>
+				
+			<!-- Informacion del personaje al hacer click en la imagen del segundo defensor -->					
+				<div id="est6" class="tabcontent">
+					<button class="atras" onclick="openPage('Agentes')"></button>
+				</div>	
+				
+			<!-- Informacion del personaje al hacer click en la imagen del tercer defensor -->					
+				<div id="est7" class="tabcontent">
+					<button class="atras" onclick="openPage('Agentes')"></button>
+				</div>	
+				
+			<!-- Informacion del personaje al hacer click en la imagen del cuarto defensor -->					
+				<div id="est8" class="tabcontent">
+					<button class="atras" onclick="openPage('Agentes')"></button>
+				</div>
+		
+		<!-- Apartado de imagenes y videos relacionados con el juego  -->	
+		<div id="Multimedia" class="tabcontent">
+			<div id="mult">IMÁGENES</div>
+				<div id="galeria">
+				    <button id="prevButton" onclick="anterior()"></button>
+					<img id="imggaleria1" src="imagenes/img/galeria1.jpg">
+					<img id="imggaleria2" src="imagenes/img/galeria2.jpg">
+					<img id="imggaleria3" src="imagenes/img/galeria3.jpg">
+					<button id="nextButton" onclick="siguiente()"></button>
+				</div>
+		
+		<div id="multv">VIDEOS</div>
+				<div id="galeriav">
+					<button id="prevButton" onclick="anteriorv()"></button>
+					
+					<iframe id="video1"  
+					src="https://www.youtube.com/embed/n8XU2jbBXXY" title="YouTube video player" 
+					frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+					gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					
+					<iframe id="video2"  src="https://www.youtube.com/embed/3em72Ar-m0U"
+					title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+					clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					allowfullscreen></iframe>
+					
+					<iframe id="video3" src="https://www.youtube.com/embed/gmi5w1lOI1Y"
+					title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+					clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					allowfullscreen></iframe>
+					
+					<button id="nextButton" onclick="siguientev()"></button>
+				</div>
+		</div>
+		
+	<!-- Pie de pagina -->
+	 <footer>
+			<div class="footer">
+				<div class="box-footer">
+						<div class="logof">				
+							<img src="imagenes/img/logorainbow.jpg">
+						</div>
+				</div>
+			
+				<div class="box-footer">
+					<h2>Estudios</h2>
+					<p>UBISOFT MONTREAL</p>						
+				</div>
+			
+				<div class="box-footer">
+					<h2>Plataformas</h2>
+					<p>XBOX GAME PASS</p>
+					<p>XBOX SERIES X | S</p>		
+					<p>XBOX ONE</p>	
+					<p>PLAYSTATION 5</p>	
+					<p>PLAYSTATION 4</p>
+					<p>UBISOFT CONNECT</p>				
+				</div>
+			
+				<div class="box-footer">
+					<h2>Socios</h2>
+					<p>GEFORCE NOW</p>						
+				</div>
+				
+				<div class="box-footer">
+						<div class="text"><h2>SIGUENOS</h2></div>
+							<a href="https://www.facebook.com/Rainbow6Spain/">
+							<img id="logo"src="imagenes/redes/facebook.jpg">
+							</a>
+							<a href="https://www.youtube.com/user/ubisoft">
+							<img id="logo"src="imagenes/redes/youtube.jpg"></a>
+							</a>
+							<a href="https://twitter.com/Rainbow6ES">
+							<img id="logo"src="imagenes/redes/twitter.jpg"></a>
+							</a>
+							<a href="https://www.instagram.com/rainbow6es/">
+							<img id="logo"src="imagenes/redes/instagram.jpg">
+							</a>
+				</div>
+			</div>
+			
+			<div class="copyright">
+				<hr>
+				<p>© 2015 Ubisoft Entertainment. All Rights Reserved. Tom Clancy’s, Rainbow Six, The Soldier Icon, Ubisoft and the Ubisoft logo are registered or unregistered trademarks of 
+				Ubisoft Entertainment in the U.S. and/or other countries. Microsoft, the Xbox Sphere mark, the Series X logo, Series S logo, Series X|S logo, Xbox One, Xbox Series X, Xbox 
+				Series S, and Xbox Series X|S are trademarks of the Microsoft group of companies. “PlayStation LOGO”, “PlayStation”, “PS5 LOGO” and “PS4 LOGO” are registered 
+				trademarks or trademarks of Sony Interactive Entertainment Inc.</p>
+			</div>	
+		</footer> 
+	</body>	
+</html>	
